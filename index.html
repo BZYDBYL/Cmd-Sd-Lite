@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CMD‑SD 安全防护 | 官方网站</title>
+  <meta name="description" content="CMD‑SD 是一款轻量级的安全防护与诊断工具，提供快速/深度扫描、隔离、垃圾清理等功能。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='22' fill='%230050ff'/%3E%3Ctext x='50%25' y='57%25' dominant-baseline='middle' text-anchor='middle' font-family='Segoe UI, system-ui, -apple-system, Arial' font-size='62' fill='white'%3EC%3C/text%3E%3Ctext x='50%25' y='102%25' dominant-baseline='middle' text-anchor='middle' font-family='Segoe UI, system-ui, -apple-system, Arial' font-size='38' fill='white' opacity='.9'%3ESD%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#131a2a; --ink:#e6edff; --muted:#a8b3cf; --brand:#3b82f6; --brand-2:#60a5fa; --ok:#10b981;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, Noto Sans, "PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",sans-serif}
+    a{color:var(--brand)}
+    .wrap{max-width:1120px;margin-inline:auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+    .logo{display:flex;gap:10px;align-items:center;font-weight:700}
+    .logo-badge{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;font-weight:800}
+    .logo-badge span{color:#fff}
+    .hero{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:center;margin-top:24px}
+    .card{background:var(--panel);border:1px solid #1f2a44;border-radius:16px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    h1{font-size:38px;line-height:1.15;margin:0 0 12px}
+    p.lead{color:var(--muted);font-size:17px;margin:0 0 18px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--brand);color:#fff;border:none;border-radius:12px;padding:12px 18px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;gap:8px;align-items:center}
+    .btn.secondary{background:#223053;color:var(--ink)}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
+    .feature{padding:18px;border-radius:14px;background:#121a2e;border:1px solid #223053}
+    .feature h3{margin:0 0 8px;font-size:18px}
+    .muted{color:var(--muted)}
+    .footer{margin-top:40px;padding:18px 0;border-top:1px dashed #2b3a5f;color:var(--muted);font-size:14px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="logo">
+        <div class="logo-badge"><span>CS</span></div>
+        <div>CMD‑SD 安全防护</div>
+      </div>
+      <div><a href="https://www.cmd-sd.com" rel="noopener">www.cmd-sd.com</a></div>
+    </div>
+
+    <section class="hero">
+      <div class="card">
+        <h1>轻量、直接、好用的<span style="color:var(--brand)">安全工具</span></h1>
+        <p class="lead">一键快速/深度扫描、隔离可疑文件、垃圾清理与系统修复。适合应急自查与日常维护。</p>
+        <div class="cta">
+          <a class="btn" href="cmd-sd-antivirus.bat" download>下载 Windows 脚本</a>
+          <a class="btn secondary" href="#features">查看功能</a>
+        </div>
+        <p class="muted" style="margin-top:8px">提示：首次运行建议以管理员身份启动。</p>
+      </div>
+      <div class="grid">
+        <div class="feature">
+          <h3>⚡ 快速 & 深度扫描</h3>
+          <div class="muted">按常见可执行扩展名或全盘遍历，记录日志并隔离可疑文件。</div>
+        </div>
+        <div class="feature">
+          <h3>🧰 系统修复</h3>
+          <div class="muted">集成 <code>sfc /scannow</code> 与基础启动项检查（示意）。</div>
+        </div>
+        <div class="feature">
+          <h3>🗑️ 垃圾清理</h3>
+          <div class="muted">清理临时目录、回收站、最近记录，执行前弹出确认。</div>
+        </div>
+        <div class="feature">
+          <h3>🛡️ 隔离区</h3>
+          <div class="muted">移动可疑文件至 Quarantine 目录，避免误删可恢复。</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="card" style="margin-top:22px">
+      <h2 style="margin:0 0 8px">功能亮点</h2>
+      <ul>
+        <li>本地白名单机制，降低误报；</li>
+        <li>菜单化操作：扫描模式、病毒库更新、任务管理器、MBR/EFI 备份等；</li>
+        <li>“官网”入口一键打开：<code>https://www.cmd-sd.com</code>；</li>
+        <li>全部在一个批处理脚本中，便于分发和二次开发。</li>
+      </ul>
+      <p class="muted">免责声明：脚本仅供学习与演示，真实环境请结合专业防护软件并谨慎操作。</p>
+    </section>
+
+    <div class="footer">
+      © <span id="y"></span> CMD‑SD • 官方网站：<a href="https://www.cmd-sd.com" rel="noopener">www.cmd-sd.com</a>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
