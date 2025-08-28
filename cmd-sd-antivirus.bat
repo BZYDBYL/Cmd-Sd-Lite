@@ -1,3 +1,4 @@
+title Cmd-Sd登录界面
 @echo off
 chcp 936 >nul
 setlocal enabledelayedexpansion
@@ -81,6 +82,7 @@ goto AUTH_MENU
 :: ================== 主菜单 ==================
 :MAIN_MENU
 cls
+title Cmd-Sd杀毒工具
 echo ========= CMD-SD 杀毒工具 =========
 echo 当前用户：%CUR_USER%
 echo 1. 快速扫描
