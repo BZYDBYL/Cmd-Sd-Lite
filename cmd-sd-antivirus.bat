@@ -1,6 +1,7 @@
 title Cmd-Sd登录界面
+
 @echo off
-chcp 936 >nul
+
 setlocal enabledelayedexpansion
 
 :: ================== 基础配置 ==================
@@ -39,9 +40,13 @@ if not exist "%USERS_DB%" echo ; username=password >"%USERS_DB%"
 :AUTH_MENU
 cls
 echo ========= 账户中心 =========
+
 echo 1. 登录
+
 echo 2. 注册
+
 echo 3. 退出
+
 set /p auth=请选择(1-3)^> 
 if "%auth%"=="1" goto LOGIN
 if "%auth%"=="2" goto REGISTER
@@ -85,13 +90,21 @@ cls
 title Cmd-Sd杀毒工具
 echo ========= CMD-SD 杀毒工具 =========
 echo 当前用户：%CUR_USER%
+
 echo 1. 快速扫描
+
 echo 2. 深度扫描
+
 echo 3. 安全模式
+
 echo 4. 暴力模式
+
 echo 5. 清理垃圾
+
 echo 6. 打开官网
+
 echo 7. 退出
+
 set /p c=请选择(1-7)^> 
 
 if "%c%"=="1" goto QUICK
