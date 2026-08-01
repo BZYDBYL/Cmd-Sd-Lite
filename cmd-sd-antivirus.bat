@@ -1,5 +1,7 @@
 title Cmd-Sd登录界面
 
+chcp 65001
+
 @echo off
 
 setlocal enabledelayedexpansion
